@@ -20,6 +20,8 @@ The codebased include 3 folders: cnn, triplet and tools
 ## Data
 The data are access through the link: 
 
+https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EtdJJGogSrBPvGOkq_d_YHIBd1eStajTUDnYZ-UD9LiA4w?e=BQechV
+
 ## How to Reproduce the results
 1. For CNN based method, please follow the description in cnn/README.md
 2. For Triplet based method, please follow the description in triplet/README.md
