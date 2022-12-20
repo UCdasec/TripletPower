@@ -2,7 +2,7 @@
 
 ** The dataset and code are for research purpose only**
 
-TripletPower can reduce the number of training traces for deep-learning side-channel attacks. Specifically, TripletPower leverages Triplet Networks (a type of deep metric learning) and learn robust feature space with a fewer number of traces. As a result, TripletPower only needs hundreds of training traces to train a ML model to recover AES encryption keys on microcontrollers while a CNN requires thousands of traces. We observe promising results from AVR XMEGA (8-bit) and also ARM STM32 (32-bit) microcontrollers. In addition to profiling attacks in both same-device and cross-device settings, TripletPower can also be extended to non-profiling attacks to succesfully recover AES encryption keys with on-the-fly labeling. 
+TripletPower can reduce the number of training traces for deep-learning side-channel attacks. Specifically, TripletPower leverages Triplet Networks (a type of deep metric learning) and learn robust feature space with a fewer number of traces. As a result, TripletPower only needs hundreds of training traces to train a ML model to recover AES encryption keys on microcontrollers while a CNN requires thousands of traces. We observe promising results from AVR XMEGA (8-bit) and also ARM STM32 (32-bit) microcontrollers. In addition to profiling attacks in both same-device and cross-device settings, TripletPower can also be extended to non-profiling attacks to succesfully recover AES encryption keys with on-the-fly labeling. More details can be found in our HOST'23 paper below. 
 
 ## Reference
 When reporting results that use the dataset or code in this repository, please cite the paper below:
