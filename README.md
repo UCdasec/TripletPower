@@ -2,7 +2,7 @@
 
 ** The dataset and code are for research purpose only**
 
-TripletPower aims to reduce the number of training traces for deep-learning side-channel attacks. Specifically, TripletPower leverages Triplet Networks and can reduce the number of training traces to hundreds. 
+TripletPower can reduce the number of training traces for deep-learning side-channel attacks. Specifically, TripletPower leverages Triplet Networks and learn robust feature space with a fewer number of traces. As a result, TripletPower only needs hundreds of training traces to train a ML model to recover AES keys on microcontrollers while a CNN requires thousands of traces. 
 
 ## Reference
 When reporting results that use the dataset or code in this repository, please cite the paper below:
