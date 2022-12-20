@@ -1,5 +1,11 @@
 # TripletPower
-This is the codebase for our paper "TripletPower".
+
+** The dataset and code are for research purpose only**
+
+## Reference
+When reporting results that use the dataset or code in this repository, please cite the paper below:
+
+Chenggang Wang, Jimmy Dani, Shane Reilly, Austhen Brownfield, Boyang Wang, John Emmert, "TripletPower: Deep-Learning Side-Channel Attacks over Few Traces," IEEE International Symposium on Hardware Oriented Security and Trust (HOST 2023), San Jose, CA, USA, May 1-4 2023
 
 ## Code
 The codebased include 3 folders: cnn, triplet and tools
