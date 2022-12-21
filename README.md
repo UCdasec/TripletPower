@@ -9,7 +9,11 @@ When reporting results that use the dataset or code in this repository, please c
 
 Chenggang Wang, Jimmy Dani, Shane Reilly, Austhen Brownfield, Boyang Wang, John Emmert, "TripletPower: Deep-Learning Side-Channel Attacks over Few Traces," IEEE International Symposium on Hardware Oriented Security and Trust (HOST 2023), San Jose, CA, USA, May 1-4 2023
 
-## Code
+## Requirements
+This project is written in Python 3.6 and Tensorflow 2.3.1. Our experiments is running with a GPU machine.
+
+## Reproduce our results
+### Code 
 The codebased include 3 folders: cnn, triplet and tools
 >
 > - cnn: include the codes for runing cnn method
@@ -17,16 +21,18 @@ The codebased include 3 folders: cnn, triplet and tools
 > - tools: include the codes of all support functions
 >
 
-## Datasets
+### Datasets
 Our datasets used in this study can be accessed through the link below (last modified Dec. 2022): 
 
 https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EtdJJGogSrBPvGOkq_d_YHIBd1eStajTUDnYZ-UD9LiA4w?e=BQechV
 
 Note: the above link need to be updated every 6 months due to certain settings of OneDrive. If you find the links are expired and you cannot access the data, please feel free to email us (boyang.wang@uc.edu). We will be update the links as soon as we can. Thanks!
 
-## How to Reproduce the results
+
+### How to Reproduce the results
 1. For CNN based method, please follow the description in cnn/README.md
 2. For Triplet based method, please follow the description in triplet/README.md
+
 
 # Contacts
 Chenggang Wang wang2c9@mail.uc.edu
