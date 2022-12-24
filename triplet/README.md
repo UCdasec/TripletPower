@@ -19,12 +19,11 @@ Below is the command line for the train and test the CNN based attack method, wh
 
 Train:
 
-python train.py --input path_to_dataset --output path_to_save_the_model --verbose --target_byte TARGET_BYTE --network_type choose_network_type{hw_model,mlp,cnn2,wang,cnn} --attack_window ATTACK_WINDOW
+python3 triplet/triplet.py -i $data -o $outDir/125 -e $epoch_num -ns $samples_per_class -tb $target_byte -lm $leakage_model -aw $attack_window -tn $train_data_number
 
 Test:
 
-python test.py --input path_to_dataset --output path_to_save_the_test_results --model_file MODEL_FILE --verbose --target_byte TARGET_BYTE --network_type choose_network_type{wang,cnn2,cnn,mlp} --attack_window ATTACK_WINDOW
-
+python3 triplet/test.py -i $data -rd $result_output_dir -tn $testing_data_number -tb $target_byte -lm $leakage_model -aw $attack_window
 
 ## Contacts
 Chenggang Wang: wang2c9@mail.uc.edu, University of Cincinnati

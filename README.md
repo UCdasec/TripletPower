@@ -18,6 +18,7 @@ The codebased include 3 folders: cnn, triplet and tools
 >
 > - cnn: include the codes for runing cnn method
 > - triplet: include the codes for runing triplet method
+> - on-the-fly: include the codes for runing on-the-fly method
 > - tools: include the codes of all support functions
 >
 
