@@ -36,6 +36,6 @@ Note: the above link need to be updated every 6 months due to certain settings o
 
 
 # Contacts
-Chenggang Wang wang2c9@mail.uc.edu
+Chenggang Wang: wang2c9@mail.uc.edu
 
-Boyang Wang boyang.wang@uc.edu
+Boyang Wang: boyang.wang@uc.edu
