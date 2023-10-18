@@ -12,7 +12,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 import tools.loadData as loadData
-import mytools.tools as mytools
+import tools as mytools
 
 
 # load up data
