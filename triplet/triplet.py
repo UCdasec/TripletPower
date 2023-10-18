@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 from joblib import dump, load
-
+sys.path.append("../TripletPower")
 import tensorflow as tf
 import tensorflow.keras.backend as K
 from tensorflow.keras.layers import Input, Lambda, Dot, Dense
@@ -29,7 +29,7 @@ from tensorflow.keras import backend as K
 # importing loadDataUtility for some functions required for data preprocessing
 import tools.loadData as loadData
 import tools.model_zoo as model_zoo
-import mytools.tools as mytools
+from tools import tools as mytools
 import tools.visualization as visualization
 
 alpha_value = 0.5
@@ -205,6 +205,7 @@ def train(opts, x, y, model_dir):
 
     # number of unique classes in the dataset
     if 'HW' == leakage_model:
+        print("HW SUCCESS")
         nb_classes = 9
     elif 'MSB' == leakage_model:
         nb_classes = 2
@@ -314,7 +315,7 @@ def train_one_knn(opts, knn_model_dir, x_train, y_train):
     if 'HW' == leakage_model:
         assert(set(y_train) == set(range(9)))
     elif 'ID' == leakage_model:
-        assert(len(set(y_train)) == set(range(256)))
+        assert(set(y_train) == set(range(256)))
     else:
         raise ValueError()
 
@@ -385,8 +386,15 @@ def main(opts):
     train_x_feat = feat_model.predict(train_x)
     print('{lOG} -- x train feat shape is: ', train_x_feat.shape)
 
-    # compensate the missing class data
-    needed_classes = set(range(9))
+    leakage_model = opts.leakage_model
+
+    # make sure the data is correct
+    print('[LOG] -- using {} leakage model now'.format(leakage_model))
+    if 'HW' == leakage_model:
+        needed_classes = set(range(9))
+    elif 'ID' == leakage_model:
+        needed_classes = set(range(256))
+        
     if needed_classes != set(train_y):
         missing_class = needed_classes - set(train_y)
         print('[LOG] -- data of some class are missing, the missing class is: '.format(missing_class))
@@ -429,3 +437,5 @@ if __name__=="__main__":
     if tf.test.is_gpu_available():
         os.environ['CUDA_VISIBLE_DEVICES'] = "0"
     main(opts)
+
+#Code fix MABON 
